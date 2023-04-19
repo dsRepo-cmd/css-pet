@@ -6,9 +6,9 @@
   margin: 0 auto;
   padding: 0 15px;
 }
-header {
-  background: white;
+.header {
   padding: 25px;
+  border-bottom: 1px solid #dee2e6;
 }
 .header_logo {
   font-size: 18px;
@@ -48,6 +48,7 @@ header {
 }
 .footer {
   padding: 24px 0;
+  border-top: 1px solid #dee2e6;
 }
 
 .footer_copyright {
@@ -116,4 +117,25 @@ header {
   width: 100%;
   font-size: 19px;
   padding: 9px;
+}
+.card {
+  border: 1px solid rgb(162, 162, 169);
+  border-radius: 2%;
+}
+.card:hover {
+  /* outline: 2px solid blue; */
+  /* outline-offset: 3px; */
+  box-shadow: 5px 5px 10px 1px #b4c6d6e8;
+  position: relative;
+  right: 3px;
+  bottom: 3px;
+}
+.btn {
+  border-radius: 40px;
+}
+.btn:hover {
+  box-shadow: 5px 5px 10px 1px #b4c6d6e8;
+}
+h1:hover {
+  text-shadow: 1px 2px 10px #b4c6d6e8;
 }

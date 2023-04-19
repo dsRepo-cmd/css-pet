@@ -1,0 +1,15 @@
+.btn-secondary {
+  max-width: 120px;
+}
+.btn-secondary:hover {
+  box-shadow: 2px 2px 8px 1px #b9c1c7e8;
+  position: relative;
+  right: 2px;
+  bottom: 2px;
+}
+.btn-secondary:focus {
+  box-shadow: 0px 0px 0px 0px #b9c1c7e8;
+  position: relative;
+  right: 0px;
+  bottom: 0px;
+}
