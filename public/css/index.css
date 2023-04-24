@@ -2,20 +2,25 @@ body {
   position: relative;
   background-color: rgb(245, 245, 245);
 }
-.btn-secondary {
+.button {
+  box-shadow: 1px 1px 1px 1px #b9c1c7e8;
+  color: unset;
+  padding: 5px 20px;
+  border: solid 1px rgba(128, 128, 128, 0.303);
+  border-radius: 5px;
+  text-decoration: none;
   margin-top: 30px;
   margin-right: 20px;
   max-width: 120px;
   text-align: center;
-  color: #e7e7e7;
 }
-.btn-secondary:hover {
+.button:hover {
   box-shadow: 1px 1px 6px 1px #b9c1c7e8;
   position: relative;
   right: 1px;
   bottom: 1px;
 }
-.btn-secondary:focus {
+.button:focus {
   box-shadow: 0px 0px 0px 0px #b9c1c7e8;
   position: relative;
   right: 0px;
