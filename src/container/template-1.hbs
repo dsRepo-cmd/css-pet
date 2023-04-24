@@ -1,7 +1,8 @@
 <div class='page'>
   <div class='page_content'>
-    <div class='page_block'>
-      <header class='header row g-0'>
+
+    <header class='page_block'>
+      <div class='header row g-0'>
         <div class='col-3'>
           {{> logo }}
         </div>
@@ -10,8 +11,9 @@
             {{> nav list=header  }}
           </div>
         </div>
-      </header>
-    </div>
+      </div>
+    </header>
+
     <div class='page_block'>
       {{> hero title=hero.title text=hero.text}}
     </div>
@@ -24,8 +26,9 @@
         {{/each}}
       </div>
     </div>
-    <div class='page_block'>
-      <footer class='row footer g-0'>
+    
+    <footer class='page_block'>
+      <div class='row footer g-0'>
         <div class='col-3'>
           {{>logo}}
           <span class='footer_copyright'>Copyright 2024</span>
@@ -36,7 +39,8 @@
             {{> nav list=links isVertical=true}}
           </div>
         {{/each}}
-      </footer>
-    </div>
+      </div>
+    </footer>
+    
   </div>
 </div>

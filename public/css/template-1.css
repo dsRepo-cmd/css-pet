@@ -43,14 +43,13 @@
   margin-left: auto;
   width: fit-content;
 }
-.page_block:not(:last-of-type) {
+.page_block:not(:last-child) {
   margin-bottom: 80px;
 }
 .footer {
   padding: 24px 0;
   border-top: 1px solid #dee2e6;
 }
-
 .footer_copyright {
   font-size: 13px;
   color: #6c757d;
@@ -79,7 +78,6 @@
   max-width: 585px;
   margin: 0 auto;
 }
-
 .plans_card:not(:last-of-type) {
   margin-right: 24px;
 }
@@ -89,7 +87,6 @@
   font-size: 24px;
   color: #212529;
 }
-
 .card_block {
   text-align: center;
 }

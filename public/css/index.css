@@ -1,5 +1,4 @@
 body {
-  --dur: 0.3s;
   position: relative;
   background-color: rgb(245, 245, 245);
 }
@@ -8,6 +7,7 @@ body {
   margin-right: 20px;
   max-width: 120px;
   text-align: center;
+  color: #e7e7e7;
 }
 .btn-secondary:hover {
   box-shadow: 1px 1px 6px 1px #b9c1c7e8;
@@ -21,7 +21,6 @@ body {
   right: 0px;
   bottom: 0px;
 }
-
 .header {
   margin: 0;
   padding-left: 40px;
@@ -32,15 +31,24 @@ body {
   border-width: 1px 0;
   box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.4),
     inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+  padding-right: 30px;
 }
-
 .header_text {
   text-align: left;
   margin-top: 15px;
-  color: rgb(66, 66, 66);
   font-style: italic;
 }
 .icon {
   block-size: 50%;
   margin-top: 15px;
+  cursor: pointer;
+}
+body {
+  transition: background-color 0.5s ease;
+  background-color: #f8f8f8; /* цвет фона в дневном режиме */
+  color: #333; /* цвет текста в дневном режиме */
+}
+body.dark-mode {
+  background-color: #222; /* цвет фона в ночном режиме */
+  color: #f8f8f8; /* цвет текста в ночном режиме */
 }
