@@ -2,15 +2,11 @@
   <div class='page_content'>
 
     <header class='page_block'>
-      <div class='header row g-0'>
-        <div class='col-3'>
+      <div class='header'>
           {{> logo }}
-        </div>
-        <div class='header_nav col-9'>
           <div class='header_nav_right'>
             {{> nav list=header  }}
           </div>
-        </div>
       </div>
     </header>
 
@@ -41,11 +37,7 @@
         <div class='row g-0'>
           <div class='col-12'>
             <div class='list_header'>
-              <div class='row'>
-                <div class='col-6'>
                   <h2 class='list_title'>List of posts</h2>
-                </div>
-                <div class='col-6'>
                   <div class='category_list'>
                     {{#each categories}}
                       <button
@@ -53,8 +45,6 @@
                       >{{text}}</button>
                     {{/each}}
                   </div>
-                </div>
-              </div>
             </div>
           </div>
           <div class='col-7'>
@@ -79,13 +69,13 @@
     </main>
 
     <footer class='page_block'>
-      <div class='row footer g-0'>
-        <div class='col-3'>
+      <div class='footer'>
+        <div>
           {{>logo}}
           <span class='footer_copyright'>© 2024</span>
         </div>
         {{#each footer}}
-          <div class='col-3'>
+          <div class="footer_col">
             <span class='footer_title'>{{title}}</span>
             {{> nav list=links isVertical=true}}
           </div>

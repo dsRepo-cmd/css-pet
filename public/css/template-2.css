@@ -7,6 +7,8 @@
   padding: 0 15px;
 }
 .header {
+  display: flex;
+  justify-content: space-between;
   padding: 25px;
   border-bottom: 1px solid #dee2e6;
 }
@@ -47,6 +49,8 @@
   margin-bottom: 80px;
 }
 .footer {
+  display: flex;
+  justify-content: space-between;
   padding: 24px 0;
   border-top: 1px solid #dee2e6;
 }
@@ -55,6 +59,9 @@
   color: #6c757d;
   display: block;
   margin-top: 12px;
+}
+.footer_col:last-of-type {
+  margin-right: 10%;
 }
 .footer_title {
   font-size: 20px;
@@ -147,6 +154,8 @@
   font-size: 32px;
 }
 .list_header {
+  display: flex;
+  justify-content: space-between;
   padding-bottom: 12px;
   border-bottom: 1px solid #dee2e6;
   margin-bottom: 40px;
