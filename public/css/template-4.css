@@ -149,7 +149,7 @@
 }
 .card {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-direction: column;
   gap: var(--space-l);
   width: 33%;
@@ -170,9 +170,12 @@
   font-weight: var(--weigth-text);
   color: var(--color-text);
   line-height: 170%;
+  flex-basis: 100%;
+  flex-grow: 1;
 }
 .card_link {
   color: var(--color-primary);
+  align-items: end;
 }
 .form {
   display: flex;
