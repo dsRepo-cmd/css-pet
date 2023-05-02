@@ -1,0 +1,52 @@
+<header class='header'>
+  {{> logo }}
+  <div class='header_nav_right'>
+    {{> nav list=header  }}
+  </div>
+</header>
+
+{{#with main}}
+<div class="hero">
+  <img src="{{image}}" alt="Hero image" class="hero_image">
+  <div class="hero_content">
+    <h1 class="hero_title">{{heading}}</h1>
+    <p class="hero_text">{{descriotion}}</p>
+    <div>
+      <a href="{{href}}" class="button hero_button">{{button}}</a>
+    </div>
+  </div>
+</div>
+{{/with}}
+
+<main class="featured">
+  {{#each featured}}
+    <div class="card">
+      <img src="{{photo}}" alt="Featured image" class="card_image">
+      <h2 class="card_title">{{heading}}</h2>
+      <p class="card_text">{{info}}</p>
+      <a class="card_link" href="{{linkUrl}}">Call to action</a>
+    </div>
+  {{/each}}
+</main>
+
+<div class="form">
+  {{#each actions}}
+  <div class="form_item">
+    <h3 class="form_title">{{heading}}</h3>
+    <a class="button form_button" href="{{url}}">{{text}}</a>
+  </div>
+  {{/each}}
+</div>
+
+<footer class='footer'>
+  <div>
+    {{>logo}}
+    <span class='footer_copyright'>© 2024</span>
+  </div>
+  {{#each footer}}
+    <div class='footer_col'>
+      <span class='footer_title'>{{title}}</span>
+      {{> nav list=links isVertical=true}}
+    </div>
+  {{/each}}
+</footer>
