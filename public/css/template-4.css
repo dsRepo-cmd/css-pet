@@ -12,7 +12,7 @@
 
   --color-white: #fff;
   --color-border: #dee2e6;
-  --color-primary: rgb(44, 114, 255);
+  --color-primary: rgb(132, 44, 255);
   --color-title: #212529;
   --color-text: #6c757d;
 
@@ -138,7 +138,7 @@
 .hero_button {
   padding: var(--space-m) var(--space-xm);
   color: var(--color-white);
-  background-color: var(--color-primary);
+  background-color: var(--color-text);
 }
 .featured {
   display: flex;
@@ -152,7 +152,7 @@
   justify-content: space-between;
   flex-direction: column;
   gap: var(--space-l);
-  width: 30%;
+  width: 33%;
   margin-bottom: 40px;
 }
 .card_image {
