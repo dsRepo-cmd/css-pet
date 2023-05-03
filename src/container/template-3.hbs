@@ -1,18 +1,24 @@
-<header class='header'>
-  {{> logo }}
+<header  class='header'>
+  <a class="logo_link" href="#test">{{> logo }}</a>
   <div class='header_nav_right'>
     {{> nav list=header  }}
   </div>
 </header>
+
 {{#with hero}}
 <div class="hero">
   <div class="hero_content">
     <h1 class="hero_title">{{title}}</h1>
     <p class="hero_text">{{text}}</p>
   </div>
-  <img src="{{photo}}" alt="Hero image" class="hero_image">
+  <div class="hero_slider">
+    <div class="hero_slider_icon hero_slider_left">{{left}}</div>
+    <img src="{{photo}}" alt="Hero image" class="hero_image">
+    <div class="hero_slider_icon hero_slider_right">{{right}}</div>
+  </div>
 </div>
 {{/with}}
+
 <main class="blog">
   {{#each blog}}
     {{> cardBlog data=this}}
@@ -21,19 +27,21 @@
 
 {{#with form}}
 <div class="form">
+  <img src="{{../hero.photo}}" alt="Hero image" class="modal_image">
   <div class="form_content">
     <h3 class="form_title">{{title}}</h3>
     <p class="form_info">{{info}}</p>
   </div>
+  <input type="text" class="input">
   <div class="form_action">
     <a href="{{href}}" class="button form_button">{{button}}</a>
   </div>
 </div>
 {{/with}}
 
-<footer class='footer'>
+<footer id="test" class='footer'>
   <div>
-    {{>logo}}
+  <a class="logo_link" href="#test_start">{{> logo }}</a>
     <span class='footer_copyright'>© 2024</span>
   </div>
   {{#each footer}}
