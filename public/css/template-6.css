@@ -283,6 +283,7 @@
 }
 
 .expirience_list {
+  width: 100%;
   padding: var(--space-xm);
   background-color: var(--color-title);
   color: var(--color-white);
