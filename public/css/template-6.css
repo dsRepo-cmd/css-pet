@@ -183,7 +183,7 @@
 }
 .form_input::placeholder {
   color: var(--color-title);
-  font-size: var(--size-d);
+  font-size: var(--size-s);
 }
 .form_checkbox {
   display: flex;
@@ -252,6 +252,7 @@
   padding-bottom: 12px;
 }
 .updates_link {
+  align-self: self-start;
   transition-duration: 0.7s;
   transition-property: opacity;
 }
