@@ -238,6 +238,7 @@
 .updates_list_img {
   height: 32px;
   width: 32px;
+  border-radius: var(--border-radius-s);
 }
 .updates_list_nickname {
   color: var(--color-text);
