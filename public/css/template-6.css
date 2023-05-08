@@ -251,6 +251,13 @@
   border-bottom: 1px solid var(--color-border);
   padding-bottom: 12px;
 }
+.updates_link {
+  transition-duration: 0.7s;
+  transition-property: opacity;
+}
+.updates_link:hover {
+  opacity: 0.7;
+}
 
 .expirience {
   position: relative;
