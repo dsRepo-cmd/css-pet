@@ -1,11 +1,9 @@
-@keyframes fly {
+/* @keyframes fly {
   from {
-    /* top: 0; */
     left: 0;
     background-color: blue;
   }
   25% {
-    /* top: 600px; */
     left: 400px;
     background-color: darkblue;
   }
@@ -14,11 +12,11 @@
     background-color: gray;
   }
   to {
-    /* top: 0; */
     left: 200px;
     background-color: deepskyblue;
   }
-}
+} */
+
 :root {
   --space-m: 12px;
   --space-xm: 16px;
@@ -259,7 +257,7 @@
   left: var(--space-l);
 }
 
-.modal_image {
+.form_image {
   margin-right: 5px;
   margin-top: 5px;
   border-radius: 5px;
@@ -297,4 +295,48 @@ body:hover .form {
   animation-direction: alternate;
   animation-fill-mode: both;
   z-index: 2;
+}
+
+.blog {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media all and (601px < width <= 800px) {
+  .blog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media all and (width <= 600px) {
+  .blog {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media all and (width <= 700px) {
+  .form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.hero_container {
+  container-type: inline-size;
+  container-name: hero;
+  min-height: 500px;
+}
+@container hero (width < 960px) {
+  .hero {
+    flex-direction: column;
+  }
 }
