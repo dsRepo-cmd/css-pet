@@ -1,45 +1,11 @@
-/* @keyframes fly {
-  from {
-    left: 0;
-    background-color: blue;
-  }
-  25% {
-    left: 400px;
-    background-color: darkblue;
-  }
-  50% {
-    left: 0;
-    background-color: gray;
-  }
-  to {
-    left: 200px;
-    background-color: deepskyblue;
-  }
-} */
-
-:root {
-  --space-m: 12px;
-  --space-xm: 16px;
-  --space-l: 24px;
-  --space-b: 36px;
-
-  --size-s: 14px;
-  --size-d: 16px;
-  --size-l: 20px;
-
-  --color-white: #fff;
-  --color-border: #dee2e6;
-  --color-primary: rgb(44, 114, 255);
-  --color-title: #212529;
-  --color-text: #6c757d;
-
-  --border-radius: 12px;
-
-  --weigth-title: 500;
-  --weigth-text: 400;
-
-  --page-width: 960px;
+@import '/css/var.css';
+@font-face {
+  font-family: 'Segment';
+  src: url('/font/Segment-Regular.otf');
+  font-weight: 400;
 }
+@layer nonmalize, main, component, style;
+
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .page {
   font-family: 'Roboto';
@@ -339,4 +305,7 @@ body:hover .form {
   .hero {
     flex-direction: column;
   }
+}
+.hero_title {
+  font-size: 5cqw;
 }
