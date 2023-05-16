@@ -7,6 +7,12 @@ router.get('/', function (req, res) {
   res.render('index', {})
 })
 // ================================================================
+router.get('/slack', function (req, res) {
+  res.render('slack', {
+    layout: null,
+  })
+})
+// ================================================================
 
 router.get('/template-1', function (req, res) {
   res.render('template-1', {
