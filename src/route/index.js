@@ -7,6 +7,12 @@ router.get('/', function (req, res) {
   res.render('index', {})
 })
 // ================================================================
+router.get('/dashboard', function (req, res) {
+  res.render('dashboard', {
+    layout: null,
+  })
+})
+// ================================================================
 router.get('/slack', function (req, res) {
   res.render('slack', {
     layout: null,
